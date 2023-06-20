@@ -1,7 +1,6 @@
-// ignore_for_file: depend_on_referenced_packages
-
-import 'package:cardapio_app/pages/random_user.dart';
 import 'package:flutter/material.dart';
+
+import 'pages/LoginPage.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepOrange,
       ),
       debugShowCheckedModeBanner: false,
-      home: const RandomUserPage(),
+      home: LoginPage(),
     );
   }
 }
