@@ -51,6 +51,23 @@ class _LoginPageState extends State<LoginPage> {
               },
               child: Text('Login'),
             ),
+            const SizedBox(height: 10),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginPage()),
+                );
+              },
+              child: const Text(
+                'Não tem login? Clique aqui!',
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ),
           ],
         ),
       ),
